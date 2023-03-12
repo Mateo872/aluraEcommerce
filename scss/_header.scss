@@ -1,0 +1,134 @@
+header {
+  width: 100%;
+  height: 5rem;
+  background-color: #fff;
+  display: grid;
+  nav {
+    .menu-add-product {
+      width: 80%;
+    }
+
+    ul {
+      height: 100%;
+      width: 91%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+      .image-logo {
+        width: 8rem;
+        img {
+          width: 100%;
+        }
+      }
+      .container-search {
+        position: relative;
+
+        &:hover input {
+          width: 13rem;
+          background-color: #f3f3f3;
+          transition: 0.4s;
+        }
+
+        .btn-search {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 0.8rem;
+          font-size: 0.8rem;
+          i {
+            color: #000;
+          }
+        }
+
+        input {
+          width: 0;
+          padding: 0.6rem 0.6rem;
+          border: none;
+          border-radius: 1rem;
+          outline: none;
+          padding-right: 1.6rem;
+          font-size: 0.6rem;
+          &::placeholder {
+            font-size: 0.6rem;
+          }
+        }
+      }
+      .none {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  header {
+    nav {
+      .menu-login {
+        justify-content: start;
+        gap: 2rem;
+      }
+
+      ul {
+        width: 91%;
+        .container-search {
+          order: 0;
+          margin-right: 5rem;
+          input {
+            width: 14rem;
+            padding: 0.7rem 0.9rem;
+            border: none;
+            border-radius: 1rem;
+            outline: none;
+            padding-right: 1.6rem;
+            font-size: 0.6rem;
+            background-color: #f3f3f3;
+            &::placeholder {
+              font-size: 0.6rem;
+            }
+          }
+          &:hover input {
+            width: 14rem;
+          }
+        }
+        .btn-login {
+          order: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  header {
+    nav {
+      ul {
+        width: 83%;
+        .container-search {
+          order: 0;
+          margin-right: 26rem;
+          input {
+            width: 20rem;
+            padding: 0.7rem 0.9rem;
+            border: none;
+            border-radius: 1rem;
+            outline: none;
+            padding-right: 1.6rem;
+            font-size: 0.6rem;
+            background-color: #f3f3f3;
+            &::placeholder {
+              font-size: 0.6rem;
+            }
+          }
+          &:hover input {
+            width: 20rem;
+          }
+        }
+        .btn-login {
+          order: 1;
+        }
+      }
+    }
+  }
+}

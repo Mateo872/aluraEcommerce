@@ -1,0 +1,457 @@
+{
+  "products": [
+    {
+      "name": "Casco de asalto blanco",
+      "price": "$1499",
+      "image": "https://i.ibb.co/ydRhHsL/producto-1.png",
+      "id": "1",
+      "category": "Star wars",
+      "description": "Parte de la armadura de los Stormtroopers."
+    },
+    {
+      "name": "Dart Vader",
+      "price": "$2999",
+      "image": "https://i.ibb.co/35bTz5c/producto-2.png",
+      "id": "2",
+      "category": "Star wars",
+      "description": "Revive una trágica escena de Star Wars: El Imperio Contraataca mientras creas la Cámara de Meditación de Darth Vader (75296), la primera maqueta para construir con ladrillos LEGO® de la icónica sala."
+    },
+    {
+      "name": "Maestro Yoda",
+      "price": "$1999",
+      "image": "https://i.ibb.co/1TybsXT/producto-3.png",
+      "id": "3",
+      "category": "Star wars",
+      "description": "N'Kata Del Gormo fue un Maestro Jedi hysalriano que vivió durante los tiempos de la República Galáctica. Encontró y entrenó a Yoda y su amigo humano al notar sus habilidades influenciadas por la Fuerza."
+    },
+    {
+      "name": "Soldado de asalto blanco",
+      "price": "$3499",
+      "image": "https://i.ibb.co/C1VKkRC/producto-4.png",
+      "id": "4",
+      "category": "Star wars",
+      "description": "Los Stormtroopers son la evolución de los antiguos Clone Troopers de las Clone Wars y son superiores a ellos en todo. Su armadura era más dura y mejor equipada, sus armas eran superiores e incluso su devoción es más sólida que la de los soldados clon."
+    },
+    {
+      "name": "Mini Yoda",
+      "price": "$999",
+      "image": "https://i.ibb.co/5xrv1Xq/producto-5.png",
+      "id": "5",
+      "category": "Star wars",
+      "description": "N'Kata Del Gormo fue un Maestro Jedi hysalriano que vivió durante los tiempos de la República Galáctica. Encontró y entrenó a Yoda y su amigo humano al notar sus habilidades influenciadas por la Fuerza."
+    },
+    {
+      "name": "Palpatine",
+      "price": "$7999",
+      "image": "https://i.ibb.co/VjsTyxm/producto-6.png",
+      "id": "6",
+      "category": "Star wars",
+      "description": "Sheev Palpatine, también conocido como Darth Sidious, fue un humano sensible a la Fuerza que sirvió como el último Canciller de la República Galáctica y el primer Emperador del Imperio Galáctico."
+    },
+    {
+      "name": "Sphero BB-8",
+      "price": "$4999",
+      "image": "../img/marius-haakestad-DivUXJCgiB8-unsplash.jpg",
+      "id": "7",
+      "category": "Star wars",
+      "description": "El robot BB-8 podrá registrar tus comandos de voz y entender tus órdenes. Puedes pedirle que haga círculos con su cuerpo, y él los hará, así como también puedes darle órdenes como “para”, “explora”..."
+    },
+    {
+      "name": "Sable de luz",
+      "price": "$799",
+      "image": "../img/1507631983_511333_1507632220_noticia_normal-900x506.jpg",
+      "id": "8",
+      "category": "Star wars",
+      "description": "Es un arma ficticia que aparece principalmente en el mundo de Star Wars. Es similar a una espada tradicional, salvo por el hecho de que su hoja es un haz de energía (plasma)."
+    },
+    {
+      "name": "Remera Star Wars 1",
+      "price": "$399",
+      "image": "../img/D_NQ_NP_681838-MLA31603923558_072019-O.jpg",
+      "id": "9",
+      "category": "Star wars",
+      "description": "Remera negra clásica de la franquicia de Star Wars."
+    },
+    {
+      "name": "Remera Star Wars 2",
+      "price": "$399",
+      "image": "../img/D_NQ_NP_907597-MLA49665553980_042022-O.jpg",
+      "id": "10",
+      "category": "Star wars",
+      "description": "Remera blanca clásica de la franquicia de Star Wars."
+    },
+    {
+      "name": "Remera Star Wars 3",
+      "price": "$399",
+      "image": "../img/remera-star-wars-negra1-d9a97bb9e1afeccaf716578138076024-1024-1024.png",
+      "id": "11",
+      "category": "Star wars",
+      "description": "Remera negra clásica de la franquicia de Star Wars."
+    },
+    {
+      "name": "Remera Star Wars 4",
+      "price": "$399",
+      "image": "../img/272947293_1783082251881391_1357346817145864611_n.jpg",
+      "id": "12",
+      "category": "Star wars",
+      "description": "Remera negra clásica de la franquicia de Star Wars."
+    },
+    {
+      "name": "Buzo 1",
+      "price": "$599",
+      "image": "../img/buzo-1.jpeg",
+      "id": "13",
+      "category": "Star wars",
+      "description": "Buzo clásico de la franquicia de Star Wars."
+    },
+    {
+      "name": "Buzo 2",
+      "price": "$599",
+      "image": "../img/buzo-2.png",
+      "id": "14",
+      "category": "Star wars",
+      "description": "Buzo clásico de la franquicia de Star Wars."
+    },
+    {
+      "name": "Buzo 3",
+      "price": "$599",
+      "image": "../img/buzo-3.jpg",
+      "id": "15",
+      "category": "Star wars",
+      "description": "Buzo clásico de la franquicia de Star Wars."
+    },
+    {
+      "name": "Buzo 4",
+      "price": "$599",
+      "image": "../img/buzo-4.jpg",
+      "id": "17",
+      "category": "Star wars",
+      "description": "Buzo clásico de la franquicia de Star Wars."
+    },
+    {
+      "name": "Buzo 5",
+      "price": "$599",
+      "image": "../img/buzo-5.webp",
+      "id": "18",
+      "category": "Star wars",
+      "description": "Buzo clásico de la franquicia de Star Wars."
+    },
+    {
+      "name": "Buzo 6",
+      "price": "$599",
+      "image": "../img/buzo-6.jpeg",
+      "id": "19",
+      "category": "Star wars",
+      "description": "Buzo clásico de la franquicia de Star Wars."
+    },
+    {
+      "name": "Joystick Xbox One",
+      "price": "$9280",
+      "image": "https://i.ibb.co/WyzMJtC/consola-1.png",
+      "id": "20",
+      "category": "Consolas",
+      "description": "Microsoft Xbox joystick inalámbrico Serie X|S robot blanco"
+    },
+    {
+      "name": "Playstation 5",
+      "price": "$12999",
+      "image": "https://i.ibb.co/0BpJthg/consola-2.png",
+      "id": "21",
+      "category": "Consolas",
+      "description": "El juego no tiene límites. Disfruta de una carga ultrarrápida con el SSD de ultra alta velocidad, una inmersión más profunda con soporte de retroalimentación háptica, activadores adaptables y audio 3D, además de una generación sin precedentes de juegos increíbles para la consola Playstation 5 - PS5."
+    },
+    {
+      "name": "Nintendo",
+      "price": "$3999",
+      "image": "https://i.ibb.co/JQjVwYX/consola-3.png",
+      "id": "22",
+      "category": "Consolas",
+      "description": "Consola Nintendo primera generación"
+    },
+    {
+      "name": "Nintendo Switch",
+      "price": "$2820",
+      "image": "https://i.ibb.co/b3xr74X/consola-4.png",
+      "id": "23",
+      "category": "Consolas",
+      "description": "Es una consola de videojuegos desarrollada por Nintendo. Conocida en el desarrollo por su nombre código «NX», se dio a conocer en octubre de 2016 y fue lanzada mundialmente el 3 de marzo de 2017."
+    },
+    {
+      "name": "Microsoft Xbox Series X",
+      "price": "$9499",
+      "image": "https://i.ibb.co/SrSD1fz/consola-5.png",
+      "id": "24",
+      "category": "Consolas",
+      "description": "Experimenta la velocidad y el rendimiento de la proxima generacion con Xbox Velocity Architecture, impulsada por un SSD personalizado y software integrado. Juega miles de juegos de cuatro generaciones de Xbox con compatibilidad con versiones anteriores, incluidos titulos optimizados en el lanzamiento."
+    },
+    {
+      "name": "Game Boy",
+      "price": "$880",
+      "image": "https://i.ibb.co/SX5xWzC/consola-6.png",
+      "id": "25",
+      "category": "Consolas",
+      "description": "La Game Boy es una videoconsola portátil desarrollada y comercializada por Nintendo, lanzada por primera vez en Japón y América del Norte en 1989, y en Europa un año después."
+    },
+    {
+      "name": "Playstation 4",
+      "price": "$1280",
+      "image": "../img/play-4.jpg",
+      "id": "26",
+      "category": "Consolas",
+      "description": "Con tu consola PlayStation 4 tendrás entretenimiento asegurado todos los días. Su tecnología fue creada para poner nuevos retos tanto a jugadores principiantes como expertos."
+    },
+    {
+      "name": "Playstation 3",
+      "price": "$180",
+      "image": "../img/play-3.jpeg",
+      "id": "27",
+      "category": "Consolas",
+      "description": "Con tu consola PlayStation 3 tendrás entretenimiento asegurado todos los días. Su tecnología fue creada para poner nuevos retos tanto a jugadores principiantes como expertos."
+    },
+    {
+      "name": "Playstation 2",
+      "price": "$280",
+      "image": "../img/play-2.jpg",
+      "id": "28",
+      "category": "Consolas",
+      "description": "Con tu consola PlayStation 3 tendrás entretenimiento asegurado todos los días. Su tecnología fue creada para poner nuevos retos tanto a jugadores principiantes como expertos."
+    },
+    {
+      "name": "Joystick PS4 rojo",
+      "price": "$1180",
+      "image": "../img/joystick-ps4-sony-dualshock-4-original-rojo.jpg",
+      "id": "29",
+      "category": "Consolas",
+      "description": "Con un panel táctil renovado que revela desde arriba la barra luminosa y un elegante acabado mate, es la forma más ergonómica e intuitiva de jugar que haya habido nunca, y está disponible en varios colores para adaptarlo a tu estilo."
+    },
+    {
+      "name": "Joystick PS4 azul",
+      "price": "$880",
+      "image": "../img/joystick-ps4-azul1-5d1bbd19e89c06377516736472685595-480-0.webp",
+      "id": "30",
+      "category": "Consolas",
+      "description": "Con un panel táctil renovado que revela desde arriba la barra luminosa y un elegante acabado mate, es la forma más ergonómica e intuitiva de jugar que haya habido nunca, y está disponible en varios colores para adaptarlo a tu estilo."
+    },
+    {
+      "name": "Joystick PS4 verde militar",
+      "price": "$890",
+      "image": "../img/Joystick_Playstation_PS42218_01.webp",
+      "id": "31",
+      "category": "Consolas",
+      "description": "Con un panel táctil renovado que revela desde arriba la barra luminosa y un elegante acabado mate, es la forma más ergonómica e intuitiva de jugar que haya habido nunca, y está disponible en varios colores para adaptarlo a tu estilo."
+    },
+    {
+      "name": "FIFA 14",
+      "price": "$280",
+      "image": "../img/18020c98f9ba3639cc13a5f464210eca.jpg",
+      "id": "32",
+      "category": "Consolas",
+      "description": "La mejor franquicia de juegos de fútbol de la historia."
+    },
+    {
+      "name": "FIFA 15",
+      "price": "$280",
+      "image": "../img/fifa-15-global-cover-escontentimage_00.jpeg.adapt.crop16x9.320w.jpeg",
+      "id": "33",
+      "category": "Consolas",
+      "description": "La mejor franquicia de juegos de fútbol de la historia."
+    },
+    {
+      "name": "FIFA 16",
+      "price": "$280",
+      "image": "../img/fifa-16-3.jpg",
+      "id": "34",
+      "category": "Consolas",
+      "description": "La mejor franquicia de juegos de fútbol de la historia."
+    },
+    {
+      "name": "FIFA 17",
+      "price": "$280",
+      "image": "../img/1469122566_948003_1469122863_noticia_normal.jpg",
+      "id": "35",
+      "category": "Consolas",
+      "description": "La mejor franquicia de juegos de fútbol de la historia."
+    },
+    {
+      "name": "FIFA 18",
+      "price": "$380",
+      "image": "../img/fifa18_caratula.webp",
+      "id": "36",
+      "category": "Consolas",
+      "description": "La mejor franquicia de juegos de fútbol de la historia."
+    },
+    {
+      "name": "FIFA 23",
+      "price": "$280",
+      "image": "../img/yM0eeJui8AFByeP5BC5XV5j9.jpeg",
+      "id": "37",
+      "category": "Consolas",
+      "description": "La mejor franquicia de juegos de fútbol de la historia."
+    },
+    {
+      "name": "Remera Atari",
+      "price": "$300",
+      "image": "https://i.ibb.co/B3V2KrM/diversos-1.png",
+      "id": "38",
+      "category": "Diversos",
+      "description": "Remera Atari de color beige."
+    },
+    {
+      "name": "Remera SNES",
+      "price": "$200",
+      "image": "https://i.ibb.co/r2L7LDq/diversos-2.png",
+      "id": "39",
+      "category": "Diversos",
+      "description": "Remera SNES de color gris."
+    },
+    {
+      "name": "Juguete Sonic",
+      "price": "$599",
+      "image": "https://i.ibb.co/NxfKpVZ/diversos-3.png",
+      "id": "40",
+      "category": "Diversos",
+      "description": "Muñequito Sonic. 35x35"
+    },
+    {
+      "name": "Radio antigua",
+      "price": "$130",
+      "image": "https://i.ibb.co/0yzSJ50/diversos-4.png",
+      "id": "41",
+      "category": "Diversos",
+      "description": "Radio de antigua generación"
+    },
+    {
+      "name": "Remera hamburguesa",
+      "price": "$299",
+      "image": "https://i.ibb.co/LpY04k4/diversos-5.png",
+      "id": "42",
+      "category": "Diversos",
+      "description": "Remera estilo hamburguesa"
+    },
+    {
+      "name": "Peluche Pikachu",
+      "price": "$900",
+      "image": "https://i.ibb.co/JdfLkV6/diversos-6.png",
+      "id": "43",
+      "category": "Diversos",
+      "description": "Peluche de Pikachu."
+    },
+    {
+      "name": "Gorra Kid Buu",
+      "price": "$820",
+      "image": "../img/22603a6cf0075d130042ac45598ceaf3364b366307dc67a5e21012bbf8bfb44e80863.jpeg",
+      "id": "44",
+      "category": "Diversos",
+      "description": "Gorra Kid Buu, calidad premium."
+    },
+    {
+      "name": "Aritos potara",
+      "price": "$180",
+      "image": "../img/cc9249a936c09bc66783dcc3683f550f1dec3c280e1682e6c4e68a3858f6365580863.jpeg",
+      "id": "45",
+      "category": "Diversos",
+      "description": "Piercing potara de color violeta."
+    },
+    {
+      "name": "Figura Vegeta ssj",
+      "price": "$3099",
+      "image": "../img/4aae7370fafe09c73306cb7ba7bdd7e9dd78036ce6265771cf45e4a06223f5b180863.jpeg",
+      "id": "46",
+      "category": "Diversos",
+      "description": "Escultura de Vegeta ssj."
+    },
+    {
+      "name": "Figura Gokú ssj",
+      "price": "$1290",
+      "image": "../img/D_NQ_NP_726001-MLA49952942371_052022-V.webp",
+      "id": "47",
+      "category": "Diversos",
+      "description": "Banpresto Figura Dragon Ball Z History Box vol. 3 - Goku Super Saiyan."
+    },
+    {
+      "name": "Remera Marvel 1",
+      "price": "$230",
+      "image": "../img/3720000000224.jpg",
+      "id": "48",
+      "category": "Diversos",
+      "description": "Remera clásica de Marvel."
+    },
+    {
+      "name": "Remera Marvel 2",
+      "price": "$300",
+      "image": "../img/3800e8f1c43345620d264911ef441a14238bc2d16330ceb27a6a34e8851c6882139919.jpeg",
+      "id": "49",
+      "category": "Diversos",
+      "description": "Remera clásica de Marvel."
+    },
+    {
+      "name": "Remera Marvel 3",
+      "price": "$150",
+      "image": "../img/remera-hombre-negra-avengers.jpg",
+      "id": "50",
+      "category": "Diversos",
+      "description": "Remera clásica de Marvel."
+    },
+    {
+      "name": "Remera Marvel 4",
+      "price": "$200",
+      "image": "../img/Art900239_1.webp",
+      "id": "51",
+      "category": "Diversos",
+      "description": "Remera clásica de Marvel."
+    },
+    {
+      "name": "Remera Marvel 5",
+      "price": "$100",
+      "image": "../img/remera-marvel-studios-negra1-93a52ef41c1bfe4fd516540291373114-240-0.png",
+      "id": "52",
+      "category": "Diversos",
+      "description": "Remera clásica de Marvel."
+    },
+    {
+      "name": "Remera Marvel 6",
+      "price": "$99",
+      "image": "../img/AGENTS_BLUE_01.jpg",
+      "id": "53",
+      "category": "Diversos",
+      "description": "Remera clásica de Marvel."
+    },
+    {
+      "name": "Remera Marvel 7",
+      "price": "$89",
+      "image": "../img/3720000000188.jpg",
+      "id": "54",
+      "category": "Diversos",
+      "description": "Remera clásica de Marvel."
+    },
+    {
+      "name": "Remera Marvel 8",
+      "price": "$124",
+      "image": "../img/00000000000032586869301-Marvel.jpg",
+      "id": "55",
+      "category": "Diversos",
+      "description": "Remera clásica de Marvel."
+    },
+    {
+      "name": "",
+      "category": "",
+      "price": "",
+      "image": "",
+      "id": "hH3K1Tg"
+    },
+    {
+      "name": "",
+      "category": "232",
+      "price": "",
+      "image": "c",
+      "id": "a"
+    },
+    {
+      "name": "sd",
+      "category": "232",
+      "price": "",
+      "image": "ca",
+      "id": "aa"
+    }
+  ]
+}
