@@ -18,7 +18,7 @@ header nav ul {
   padding: 0;
 }
 header nav ul .image-logo {
-  width: 8rem;
+  width: 6rem;
 }
 header nav ul .image-logo img {
   width: 100%;
@@ -27,7 +27,7 @@ header nav ul .container-search {
   position: relative;
 }
 header nav ul .container-search:hover input {
-  width: 13rem;
+  width: 11rem;
   background-color: #f3f3f3;
   transition: 0.4s;
 }
@@ -127,7 +127,7 @@ header nav ul .none {
   }
 }
 .btn-login {
-  padding: 0.75rem 2.4rem;
+  padding: 0.6rem 1.6rem;
   border: 1px solid #2a7ae4;
   color: #2a7ae4;
   border-radius: 0;
@@ -144,7 +144,7 @@ header nav ul .none {
 
 .btn-submit {
   border: 1px solid #2a7ae4;
-  padding: 0.75rem 1rem;
+  padding: 0.85rem 1rem;
   background-color: #2a7ae4;
   color: #fff;
   cursor: pointer;
@@ -286,7 +286,9 @@ section article {
   width: 1rem;
 }
 .products-container .products .product {
-  margin-top: 0.6rem;
+  height: 14rem;
+  width: 8.7rem;
+  margin-top: 0.7rem;
   position: relative;
 }
 .products-container .products .product .product__delete--edit {
@@ -301,11 +303,16 @@ section article {
   color: #2a7ae4;
 }
 .products-container .products .product .product__delete--edit i:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.products-container .products .product .product__delete--edit a:hover {
+  transform: scale(1.1);
   transition: 0.3s;
 }
 .products-container .products .product img {
-  height: 10.5rem;
-  width: 10.5rem;
+  height: 8.7rem;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 0.3rem;
@@ -313,8 +320,8 @@ section article {
 .products-container .products .product .product-name {
   margin-top: 0.3rem;
   opacity: 0.7;
-  font-weight: 400;
-  font-size: 0.8rem;
+  font-weight: bold;
+  font-size: 0.7rem;
 }
 .products-container .products .product .product-price {
   margin: 0.3rem 0;
@@ -325,7 +332,7 @@ section article {
   text-decoration: none;
   color: #2a7ae4;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .btn-banner {
@@ -342,7 +349,7 @@ section article {
 }
 
 .btn-product {
-  padding: 0.7rem 1.24rem;
+  padding: 0.8rem 0.33rem;
   background-color: #2a7ae4;
 }
 
@@ -364,6 +371,13 @@ section article {
   }
   .products-container {
     margin-top: 1.5rem;
+  }
+  .products-container .products .product {
+    height: 14rem;
+    width: 10rem;
+  }
+  .products-container .products .products-title {
+    margin-top: 0.6rem;
   }
   .products-container .products .product__description--overlay {
     width: 100%;
@@ -447,6 +461,12 @@ section article {
   }
   .products-container {
     margin-top: 2.8rem;
+  }
+  .products-container .products .product {
+    width: 10.7rem;
+  }
+  .products-container .products .products-title:first-child a {
+    padding: 0.8rem 1.34rem;
   }
   .products-container .products .product-empty-container {
     padding: 6rem;
@@ -588,9 +608,12 @@ main .new-product-container .new-product {
   flex-direction: column;
   align-items: center;
 }
+main .new-product-container .new-product .products-title h2 {
+  font-size: 1rem;
+}
 main .new-product-container .new-product .new-product__drag {
   width: 100%;
-  height: 18rem;
+  height: 12rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -607,7 +630,7 @@ main .new-product-container .new-product .new-product__drag p {
 }
 main .new-product-container .new-product .new-product__drag label {
   margin-top: 0.7rem;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   padding: 0.4rem 0.8rem;
   background-color: #2a7ae4;
   color: #fff;
@@ -619,6 +642,12 @@ main .new-product-container .new-product form {
 main .new-product-container .new-product form input {
   margin: 1rem 0;
   width: 100%;
+  border-radius: 0;
+}
+main .new-product-container .new-product form .form-select {
+  padding: 1.1rem;
+  font-size: 0.8rem;
+  border-radius: 0;
 }
 
 footer {
@@ -666,6 +695,9 @@ footer {
   }
   main .new-product-container {
     margin-top: 2rem;
+  }
+  main .new-product-container .new-product .products-title h2 {
+    font-size: 1.4rem;
   }
   main .new-product-container .new-product .new-product__drag {
     height: 30rem;

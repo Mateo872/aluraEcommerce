@@ -6,14 +6,14 @@ const productsVarious = document.querySelector("[data-various]");
 const productsContainer = document.querySelector(".products");
 
 function showProducts(name, price, descripcion, image, id, category) {
-  if (window.innerWidth >= 390 && window.innerWidth <= 768) {
+  if (window.innerWidth >= 320 && window.innerWidth <= 768) {
     if (category === "Star wars" && productsStarWars.children.length !== 4) {
       productsStarWars.innerHTML += `
                 <div class="product">
                     <div class="product-image">
                         <img src="${image}" alt="Diversos productos" />
                     </div>
-                    <h3 class="product-name">${name}</h3>
+                    <h3 id="${id}" class="product-name">${name}</h3>
                     <p class="product-price">${price}</p>
                     <a href="#" class="product-detail">Ver producto</a>
                 </div>
@@ -28,7 +28,7 @@ function showProducts(name, price, descripcion, image, id, category) {
                     <div class="product-image">
                         <img src="${image}" alt="Diversos productos" />
                     </div>
-                    <h3 class="product-name">${name}</h3>
+                    <h3 id="${id}" class="product-name">${name}</h3>
                     <p class="product-price">${price}</p>
                     <a href="#" class="product-detail">Ver producto</a>
                 </div>
@@ -43,7 +43,7 @@ function showProducts(name, price, descripcion, image, id, category) {
                     <div class="product-image">
                         <img src="${image}" alt="Diversos productos" />
                     </div>
-                    <h3 class="product-name">${name}</h3>
+                    <h3 id="${id}" class="product-name">${name}</h3>
                     <p class="product-price">${price}</p>
                     <a href="#" class="product-detail">Ver producto</a>
                 </div>
@@ -57,7 +57,7 @@ function showProducts(name, price, descripcion, image, id, category) {
                     <div class="product-image">
                         <img src="${image}" alt="Diversos productos" />
                     </div>
-                    <h3 class="product-name">${name}</h3>
+                    <h3 id="${id}" class="product-name">${name}</h3>
                     <p class="product-price">${price}</p>
                     <a href="#" class="product-detail">Ver producto</a>
                 </div>
@@ -72,7 +72,7 @@ function showProducts(name, price, descripcion, image, id, category) {
                     <div class="product-image">
                         <img src="${image}" alt="Diversos productos" />
                     </div>
-                    <h3 class="product-name">${name}</h3>
+                    <h3 id="${id}" class="product-name">${name}</h3>
                     <p class="product-price">${price}</p>
                     <a href="#" class="product-detail">Ver producto</a>
                 </div>
@@ -87,7 +87,7 @@ function showProducts(name, price, descripcion, image, id, category) {
                     <div class="product-image">
                         <img src="${image}" alt="Diversos productos" />
                     </div>
-                    <h3 class="product-name">${name}</h3>
+                    <h3 id="${id}" class="product-name">${name}</h3>
                     <p class="product-price">${price}</p>
                     <a href="#" class="product-detail">Ver producto</a>
                 </div>
@@ -109,10 +109,10 @@ function description() {
 function showDetail(e) {
   e.preventDefault();
 
-  const nameProduct = e.target.parentElement.querySelector("h3").textContent;
+  const idProduct = e.target.parentElement.querySelector("h3").id;
 
   const productDescriptionFilter = dataProducts.filter(
-    (product) => product.name === nameProduct
+    (product) => product.id === idProduct
   );
 
   productOverlay.style.display = "flex";
@@ -199,24 +199,21 @@ function search(e) {
           `;
     }
 
-    dataFilter.forEach(({ name, image, price }) => {
+    dataFilter.forEach(({ name, image, price, id }) => {
       productsContainer.innerHTML += `
               <div class="product">
                   <div class="product-image">
                       <img src="${image}" alt="Productos" />
                   </div>
-                  <h3 class="product-name">${name}</h3>
+                  <h3 id="${id}" class="product-name">${name}</h3>
                   <p class="product-price">${price}</p>
                   <a href="#" class="product-detail">Ver producto</a>
               </div>
                 `;
 
-      if (
-        productsContainer.children.length <= 4 ||
-        productsContainer.children.length === 8
-      ) {
+      if (productsContainer.children.length < 4) {
         productsContainer.style.justifyContent = "center";
-        productsContainer.style.gap = "3rem";
+        productsContainer.style.gap = "1.15rem";
       } else {
         productsContainer.style.justifyContent = "space-between";
         productsContainer.style.gap = "0";
@@ -276,7 +273,7 @@ function allProducts(e) {
             <div class="product-image">
                 <img src="${product.image}" alt="Star wars productos" />
             </div>
-            <h3 class="product-name">${product.name}</h3>
+            <h3 id="${product.id}" class="product-name">${product.name}</h3>
             <p class="product-price">${product.price}</p>
             <a href="#" class="product-detail">Ver producto</a>
         </div>
@@ -304,7 +301,7 @@ function allProducts(e) {
             <div class="product-image">
                 <img src="${product.image}" alt="Consolas productos" />
             </div>
-            <h3 class="product-name">${product.name}</h3>
+            <h3 id="${product.id}" class="product-name">${product.name}</h3>
             <p class="product-price">${product.price}</p>
             <a href="#" class="product-detail">Ver producto</a>
         </div>
@@ -332,7 +329,7 @@ function allProducts(e) {
             <div class="product-image">
                 <img src="${product.image}" alt="Diversos productos" />
             </div>
-            <h3 class="product-name">${product.name}</h3>
+            <h3 id="${product.id}" class="product-name">${product.name}</h3>
             <p class="product-price">${product.price}</p>
             <a href="#" class="product-detail">Ver producto</a>
         </div>

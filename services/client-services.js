@@ -13,7 +13,7 @@ const createProduct = (name, price, image, category, description, id) => {
       image,
       category,
       description,
-      id: uuid.v4(),
+      id,
     }),
   });
 };

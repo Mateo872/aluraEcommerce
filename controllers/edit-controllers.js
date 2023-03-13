@@ -45,28 +45,30 @@ getData();
 
 const form = document.querySelector("[data-form]");
 
+const messageError = document.querySelector(".formUpdate-incorrect");
+messageError.style.display = "none";
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   image = fileProduct.querySelector("img").src;
 
   const name = document.querySelector("[data-name-product]").value;
-  const price = document.querySelector("[data-price]").value;
+  let price = document.querySelector("[data-price]").value;
+  price = `$${price}`;
   const category = document.querySelector("[data-category]").value;
   const description = document.querySelector("[data-desc]").value;
 
-  clientServices
-    .updateProduct(name, price, image, id, category, description)
-    .then(() => {
-      Swal.fire({
-        position: "top-end",
-        icon: "success",
-        title: "Producto editado",
-        showConfirmButton: false,
-        timer: 1500,
-      });
-      setTimeout(function () {
+  if (fileProduct.querySelector("h2")) {
+    messageError.textContent = "Cargue una foto";
+    messageError.style.display = "block";
+  } else {
+    messageError.style.display = "none";
+    clientServices
+      .updateProduct(name, price, image, id, category, description)
+      .then(() => {
+        Swal.fire("Perfecto!", "Producto editado!", "success").then(() => {});
         window.location.href = "../pages/allProducts.html";
-      }, 2000);
-    });
+      });
+  }
 });

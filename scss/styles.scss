@@ -3,7 +3,6 @@
 @import "variables";
 @import "header";
 @import "components";
-@import "footer";
 
 * {
   margin: 0;
@@ -145,9 +144,14 @@ main {
       display: flex;
       flex-direction: column;
       align-items: center;
+      .products-title {
+        h2 {
+          font-size: 1rem;
+        }
+      }
       .new-product__drag {
         width: 100%;
-        height: 18rem;
+        height: 12rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -166,7 +170,7 @@ main {
 
         label {
           margin-top: 0.7rem;
-          font-size: 1.2rem;
+          font-size: 0.8rem;
           padding: 0.4rem 0.8rem;
           background-color: #2a7ae4;
           color: #fff;
@@ -178,6 +182,12 @@ main {
         input {
           margin: 1rem 0;
           width: 100%;
+          border-radius: 0;
+        }
+        .form-select {
+          padding: 1.1rem;
+          font-size: 0.8rem;
+          border-radius: 0;
         }
       }
     }
@@ -243,6 +253,11 @@ footer {
     .new-product-container {
       margin-top: 2rem;
       .new-product {
+        .products-title {
+          h2 {
+            font-size: 1.4rem;
+          }
+        }
         .new-product__drag {
           height: 30rem;
 

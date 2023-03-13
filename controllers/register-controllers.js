@@ -20,6 +20,7 @@ const showProductsAdmin = (name, price, image, id, category, description) => {
     </div>
     <h3 class="product-name">${name}</h3>
     <p class="product-price">${price}</p>
+    <p class="product-detail text-dark-emphasis opacity-50">#${id}</p>
   </div>`;
 
   showDelete();

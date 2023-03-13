@@ -73,23 +73,22 @@
                 id="floatingInput"
                 placeholder="Precio del producto"
                 required
-                maxlength="40"
+                maxlength="10"
                 data-price
               />
               <label for="floatingInput">Precio del producto</label>
             </div>
-            <div class="form-floating">
-              <input
-                type="text"
-                class="form-control"
-                id="floatingInput"
-                placeholder="Categoría del producto"
-                required
-                maxlength="40"
-                data-category
-              />
-              <label for="floatingInput">Categoría del producto</label>
-            </div>
+            <select
+              class="form-select form-select-lg mb-3"
+              aria-label=".form-select-lg example"
+              data-category
+              required
+            >
+              <option selected>Categoría del producto</option>
+              <option value="Star wars">Star wars</option>
+              <option value="Consolas">Consolas</option>
+              <option value="Diversos">Diversos</option>
+            </select>
             <div class="form-floating">
               <input
                 type="text"
@@ -101,6 +100,7 @@
                 data-desc
               />
               <label for="floatingInput">Descripción del producto</label>
+              <p class="formUpdate-incorrect"></p>
             </div>
             <input
               type="submit"
@@ -117,12 +117,18 @@
               <img src="../img/Logo.png" alt="Logo" />
             </a>
             <ul>
-              <li><a href="#">Quiénes somos</a></li>
-              <li><a href="#">Política de privacidad</a></li>
-              <li><a href="#">Programa de fidelidad</a></li>
-              <li><a href="#">Nuestras tiendas</a></li>
-              <li><a href="#">Quiero ser franquiciado</a></li>
-              <li><a href="#">Anúncie aquí</a></li>
+              <li><a href="../pages/error404.html">Quiénes somos</a></li>
+              <li>
+                <a href="../pages/error404.html">Política de privacidad</a>
+              </li>
+              <li>
+                <a href="../pages/error404.html">Programa de fidelidad</a>
+              </li>
+              <li><a href="../pages/error404.html">Nuestras tiendas</a></li>
+              <li>
+                <a href="../pages/error404.html">Quiero ser franquiciado</a>
+              </li>
+              <li><a href="../pages/error404.html">Anúncie aquí</a></li>
             </ul>
           </div>
           <form action="">
