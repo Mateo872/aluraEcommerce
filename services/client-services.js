@@ -30,7 +30,7 @@ const detailProduct = async (id) => {
   );
 };
 
-const updateProduct = (name, price, image, category, description, id) => {
+const updateProduct = (name, price, image, id, category, description) => {
   return fetch(`  http://localhost:3000/products/${id}`, {
     method: "PUT",
     headers: {

@@ -199,10 +199,11 @@ section {
       .product-price {
         margin: 0.3rem 0;
         font-size: 0.8rem;
+        color: green;
       }
       .product-detail {
         text-decoration: none;
-        color: #2a7ae4;
+        color: var.$color-primary;
         font-weight: 400;
         font-size: 0.8rem;
       }
