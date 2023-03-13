@@ -1,7 +1,8 @@
-const listProducts = () => fetch("./db.json").then((resp) => resp.json());
+const listProducts = () =>
+  fetch("  http://localhost:3000/products").then((resp) => resp.json());
 
-const createProduct = (name, price, image, category, description) => {
-  return fetch("./db.json", {
+const createProduct = (name, price, image, category, description, id) => {
+  return fetch("  http://localhost:3000/products", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -12,28 +13,36 @@ const createProduct = (name, price, image, category, description) => {
       image,
       category,
       description,
-      id: id++,
+      id: uuid.v4(),
     }),
   });
 };
 
 const deleteProduct = (id) => {
-  return fetch(`./db.json/${id}`, {
+  return fetch(`  http://localhost:3000/products/${id}`, {
     method: "DELETE",
   });
 };
 
 const detailProduct = async (id) => {
-  return fetch(`./db.json/${id}`).then((resp) => resp.json());
+  return fetch(`  http://localhost:3000/products/${id}`).then((resp) =>
+    resp.json()
+  );
 };
 
 const updateProduct = (name, price, image, category, description, id) => {
-  return fetch(`./db.json/${id}`, {
+  return fetch(`  http://localhost:3000/products/${id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ name, price, image, category, description }),
+    body: JSON.stringify({
+      name,
+      price,
+      image,
+      category,
+      description,
+    }),
   })
     .then((resp) => resp)
     .catch((err) => console.log(err));
