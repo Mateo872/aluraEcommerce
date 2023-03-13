@@ -145,6 +145,7 @@ function closeProductDescription() {
     productOverlay.style.display = "none";
   });
 }
+
 let dataProducts = [];
 
 clientServices.listProducts().then((data) => {
@@ -225,11 +226,11 @@ function search(e) {
     description();
   }
 }
+
 const btnSubmit = document.querySelector("[data-submit]");
 const inputName = document.querySelector("[data-name]");
 const inputMessage = document.querySelector("[data-message]");
 const message = document.querySelector(".form-incorrect");
-const form = document.querySelector("form");
 
 message.style.display = "none";
 

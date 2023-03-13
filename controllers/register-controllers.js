@@ -2,8 +2,6 @@ import { clientServices } from "../services/client-services.js";
 
 const products = document.querySelector(".products");
 
-let nameProduct;
-
 const showProductsAdmin = (name, price, image, id, category, description) => {
   products.innerHTML += `
     <div class="product">
@@ -23,7 +21,7 @@ const showProductsAdmin = (name, price, image, id, category, description) => {
     <h3 class="product-name">${name}</h3>
     <p class="product-price">${price}</p>
   </div>`;
-  nameProduct = name;
+
   showDelete();
 };
 
@@ -70,11 +68,13 @@ function deleteProduct(e) {
     }
   });
 }
+let dataProducts = [];
 
 const showProducts = () => {
   clientServices
     .listProducts()
     .then((data) => {
+      dataProducts.push(...data);
       data.forEach(({ name, price, image, id, category, description }) => {
         showProductsAdmin(name, price, image, id, category, description);
       });
@@ -87,7 +87,6 @@ const btnSubmit = document.querySelector("[data-submit]");
 const inputName = document.querySelector("[data-name]");
 const inputMessage = document.querySelector("[data-message]");
 const message = document.querySelector(".form-incorrect");
-const form = document.querySelector("form");
 
 message.style.display = "none";
 
@@ -131,7 +130,6 @@ function inputValidateName() {
     btnSubmit.style.opacity = 0.6;
   }
 }
-
 function inputValidateMessage() {
   const value = inputMessage.value;
 
@@ -151,5 +149,78 @@ function inputValidateMessage() {
   } else {
     btnSubmit.disabled = true;
     btnSubmit.style.opacity = 0.6;
+  }
+}
+
+const productsContainer = document.querySelector(".products-container");
+
+const inputSearch = document.querySelector(".input-search");
+
+const productEmpty = document.createElement("h2");
+
+productEmpty.classList.add("product-empty");
+
+productEmpty.textContent = "No se encuentra ningún producto con ese título";
+
+inputSearch.addEventListener("keyup", search);
+
+function search(e) {
+  const value = e.target.value;
+
+  if (e.key === "Enter" && value != 0) {
+    const dataFilter = dataProducts.filter((letter) =>
+      letter.name.toLowerCase().includes(value.toLowerCase())
+    );
+
+    if (dataFilter.length == 0) {
+      products.innerHTML = `
+          <div class="product-empty-container">
+          <h2 class="product-empty">${productEmpty.textContent}</h2>
+          <a href="./allProducts.html" class="link-arrow display">
+          <img src="../img/Vector (1).png" alt="Flecha derecha" />
+          </a>
+          </div
+          `;
+    } else {
+      products.innerHTML = `
+          <div class="products-title">
+          <h2>Todos los productos</h2>
+          <a href="./allProducts.html" class="link-arrow display">
+          <img src="../img/Vector (1).png" alt="Flecha derecha" />
+          </a>
+          </div>
+          `;
+    }
+
+    dataFilter.forEach(({ name, image, price, id }) => {
+      products.innerHTML += `
+      <div class="product">
+      <div class="product__delete--edit">
+      <i id="${id}" class="bi bi-trash3"></i>
+      <a href="../pages/editProduct.html?id=${id}">
+        <i class="bi bi-pencil"></i>
+      </a>
+      </div>
+  
+      <div class="product-image">
+        <img
+          src="${image}"
+          alt="Productos"
+        />
+      </div>
+      <h3 class="product-name">${name}</h3>
+      <p class="product-price">${price}</p>
+    </div>`;
+
+      showDelete();
+
+      if (products.children.length <= 4 || products.children.length === 8) {
+        products.style.justifyContent = "center";
+        products.style.gap = "3rem";
+      } else {
+        products.style.justifyContent = "space-between";
+        products.style.gap = "0";
+      }
+    });
   }
 }
