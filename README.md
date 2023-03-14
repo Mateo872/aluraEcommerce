@@ -21,14 +21,14 @@ Contraseña: alura872
 
 ## Acceso a la API:
 
-- Primero, instalamos npm:
+### Primero, instalamos npm:
 
- npm install
+* npm install
 
-- Segundo, instalamos JSON server:
+### Segundo, instalamos JSON server:
 
- npm install -g json-server
+* npm install -g json-server
 
-- Tercero, inicializamos JSON server:
+### Tercero, inicializamos JSON server:
 
- json-server --watch db.json
+* json-server --watch db.json
