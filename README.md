@@ -15,6 +15,20 @@ Los datos e imágenes de los productos son consumidos desde una Api creada con J
 
 ## Datos para el inicio de sesión
 
-### Correo: alura872@alura.com
+Correo: alura872@alura.com
 
-### contraseña: alura872
+Contraseña: alura872
+
+## Acceso a la API:
+
+- Primero, instalamos npm:
+
+\*\* npm install
+
+- Segundo, instalamos JSON server:
+
+\*\* npm install -g json-server
+
+- Tercero, inicializamos JSON server:
+
+\*\* json-server --watch db.json
